@@ -1,0 +1,59 @@
+# =========================================================================
+# Standard Android & Jetpack Compose .gitignore
+# Ensures ONLY source code and build recipes are pushed to GitHub.
+# Excludes local paths, binaries, caches, user configs, and secrets.
+# =========================================================================
+
+# Built application binaries & intermediate outputs
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Build directories across root and all modules
+build/
+app/build/
+*/build/
+bin/
+gen/
+out/
+
+# Gradle cache directories (keep gradle/wrapper intact!)
+.gradle/
+
+# Local machine-specific configuration (contains your private SDK directory)
+local.properties
+
+# Proguard / R8 mapping & output logs
+proguard/
+*.log
+
+# Android Studio & IntelliJ project files & user caches
+*.iml
+.idea/
+.navigation/
+captures/
+
+# C++ / NDK native build outputs (if any)
+.externalNativeBuild
+.cxx/
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Signing keys & secrets (never push private keystores or secrets to GitHub!)
+*.jks
+*.keystore
+secrets.properties
+google-services.json
+
+# Root temporary testing screenshots
+/*.png
