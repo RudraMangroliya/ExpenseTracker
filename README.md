@@ -74,10 +74,6 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
    - Go back and tap **Install**.
 4. **Done!** Launch **MR Tracker** and enjoy 100% offline, privacy-first expense and budget tracking!
 
-> [!TIP]
-> **Updating from a Previous Android Studio / Beta Build?**
-> If you previously installed an older build directly from Android Studio with mismatched debug keys, uninstall that older version once before installing `v1.0.4`. All future releases now use the shared repository signing key and will update smoothly without any package conflicts!
-
 ---
 
 ## ✨ Key Features
