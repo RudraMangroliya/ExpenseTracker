@@ -4,8 +4,8 @@
 ### Modern Expense, Budget & Split Manager for Android
 
 <p align="center">
-  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest">
-    <img src="https://img.shields.io/badge/⚡%20Download%20Latest%20APK-v1.0.3-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK" height="42">
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest/download/MR-Tracker.apk">
+    <img src="https://img.shields.io/badge/⚡%20Download%20Latest%20APK-v1.0.4-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK" height="42">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases">
@@ -33,11 +33,11 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
 
 <div align="center">
 
-### 📥 Latest Production APK
+### 📥 Direct APK Download
 
 <p align="center">
-  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest">
-    <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20LATEST%20APK-v1.0.3%20STABLE-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK Button" height="48">
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest/download/MR-Tracker.apk">
+    <img src="https://img.shields.io/badge/⬇️%20DIRECT%20DOWNLOAD%20APK-v1.0.4%20STABLE-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Direct Download APK Button" height="48">
   </a>
 </p>
 
@@ -48,8 +48,8 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
 </p>
 
 <p align="center">
-  <code>📦 Package: MR-Tracker.apk</code> &bull; 
-  <code>⚡ Latest Release: v1.0.3</code> &bull; 
+  <code>📦 Direct APK: MR-Tracker.apk</code> &bull; 
+  <code>⚡ Latest Release: v1.0.4</code> &bull; 
   <code>📱 Android: 7.0+ (API 24+)</code> &bull; 
   <code>🔒 100% Offline & Private</code>
 </p>
@@ -59,23 +59,24 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
 <details align="center">
   <summary>📱 <b>Visiting on Computer? Click to Scan QR Code with Phone Camera</b></summary>
   <br>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fgithub.com%2FRudraMangroliya%2FExpenseTracker%2Freleases%2Flatest" alt="Scan to Download APK" width="150" height="150">
-  <p><sub>Scan with your phone camera or Google Lens to download directly to your mobile device</sub></p>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fgithub.com%2FRudraMangroliya%2FExpenseTracker%2Freleases%2Flatest%2Fdownload%2FMR-Tracker.apk" alt="Scan to Download APK" width="150" height="150">
+  <p><sub>Scan with your phone camera or Google Lens to start instant download directly to your mobile device</sub></p>
 </details>
 
 </div>
 
 ### 📋 Installation Guide (Step-by-Step):
-1. **Download**: Tap the [📥 **Download Latest APK**](https://github.com/RudraMangroliya/ExpenseTracker/releases/latest) button above on your Android device (Chrome or any browser).
-2. **Open**: Tap the download completed notification, or open your phone's **Files / Downloads** app and tap the downloaded `.apk` file.
+1. **Download**: Tap the [📥 **Direct Download APK**](https://github.com/RudraMangroliya/ExpenseTracker/releases/latest/download/MR-Tracker.apk) button above on your Android device (Chrome or any browser) to begin instant download.
+2. **Open**: Tap the download completed notification, or open your phone's **Files / Downloads** app and tap the downloaded `MR-Tracker.apk` file.
 3. **Allow Installation**:
    - If prompted: *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**.
    - Turn ON **"Allow from this source"**.
    - Go back and tap **Install**.
 4. **Done!** Launch **MR Tracker** and enjoy 100% offline, privacy-first expense and budget tracking!
 
-> 💡 **Fixing "Package Conflict" or "App Not Installed" Error**:
-> If you previously installed an older build directly from Android Studio or an earlier release with mismatched signatures, please **uninstall that existing app from your device first** before installing `v1.0.3`. All builds from `v1.0.3` onwards now use the identical shared signing certificate, so future GitHub APK downloads will update seamlessly without any package conflicts!
+> [!TIP]
+> **Updating from a Previous Android Studio / Beta Build?**
+> If you previously installed an older build directly from Android Studio with mismatched debug keys, uninstall that older version once before installing `v1.0.4`. All future releases now use the shared repository signing key and will update smoothly without any package conflicts!
 
 ---
 
