@@ -5,7 +5,11 @@
 
 <p align="center">
   <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest/download/MR-Tracker.apk">
-    <img src="https://img.shields.io/badge/⚡%20Download%20Latest%20APK-v1.0.4-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK" height="42">
+    <img src="https://img.shields.io/badge/⚡%20Download%20APK-v1.0.4-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK" height="42">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/archive/refs/heads/main.zip">
+    <img src="https://img.shields.io/badge/📦%20Source%20Code-Download%20ZIP-f57c00?style=for-the-badge&logo=github&logoColor=white" alt="Download Project ZIP" height="42">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases">
@@ -33,11 +37,15 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
 
 <div align="center">
 
-### 📥 Direct APK Download
+### 📥 Direct Downloads
 
 <p align="center">
   <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest/download/MR-Tracker.apk">
     <img src="https://img.shields.io/badge/⬇️%20DIRECT%20DOWNLOAD%20APK-v1.0.4%20STABLE-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Direct Download APK Button" height="48">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/archive/refs/heads/main.zip">
+    <img src="https://img.shields.io/badge/📦%20DOWNLOAD%20PROJECT%20ZIP-SOURCE%20CODE-f57c00?style=for-the-badge&logo=github&logoColor=white" alt="Download Project ZIP Button" height="48">
   </a>
 </p>
 

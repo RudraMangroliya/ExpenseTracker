@@ -61,6 +61,10 @@ jobs:
             - 📊 **Budgets & Insights**: Real-time spending progress bars, monthly limits, and breakdown charts
             - 🌗 **Adaptive Themes & Haptics**: Full Dark / Light mode with tactile haptic feedback
 
+            #### 📥 Direct Downloads:
+            - 📱 [**Download Android App (MR-Tracker.apk)**](https://github.com/RudraMangroliya/ExpenseTracker/releases/download/${{ github.ref_name }}/MR-Tracker.apk)
+            - 📦 [**Download Project Source Code (.ZIP)**](https://github.com/RudraMangroliya/ExpenseTracker/archive/refs/tags/${{ github.ref_name }}.zip)
+
             #### 📲 Installation:
-            1. Download the **MR-Tracker-${{ github.ref_name }}.apk** below directly on your Android phone.
+            1. Download the **MR-Tracker.apk** above directly to your Android device.
             2. Tap the downloaded file to install.
