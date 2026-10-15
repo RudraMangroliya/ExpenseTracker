@@ -4,12 +4,12 @@
 ### Modern Expense, Budget & Split Manager for Android
 
 <p align="center">
-  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/download/v1.0.1/MR-Tracker-v1.0.1.apk">
-    <img src="https://img.shields.io/badge/⚡%20Download%20APK-v1.0.1%20(19.8%20MB)-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download APK" height="42">
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest">
+    <img src="https://img.shields.io/badge/⚡%20Download%20Latest%20APK-v1.0.2-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK" height="42">
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest">
-    <img src="https://img.shields.io/badge/🏷️%20Latest%20Release-v1.0.1-2979FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d47a1" alt="Latest Release" height="42">
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases">
+    <img src="https://img.shields.io/badge/🏷️%20All%20Releases-Changelog-2979FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d47a1" alt="All Releases" height="42">
   </a>
 </p>
 
@@ -29,38 +29,45 @@ A production-grade, privacy-first personal finance application for Android built
 
 ## 📲 Download & Install the App
 
-Anyone can install and run **MR Tracker** directly on their Android phone without needing Android Studio or developer tools:
+Anyone can install and run **MR Tracker** directly on their Android phone without needing Android Studio or developer tools.
 
-<table>
-  <tr>
-    <td align="center" width="60%">
-      <h3>📥 Direct APK Download</h3>
-      <p>Tap below to download the latest production APK directly to your phone:</p>
-      <p>
-        <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/download/v1.0.1/MR-Tracker-v1.0.1.apk">
-          <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20APK-v1.0.1%20STABLE-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download APK Button" height="46">
-        </a>
-      </p>
-      <p>
-        <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases">
-          <img src="https://img.shields.io/badge/🏷️%20View%20All%20Releases%20&%20Changelog-0969da?style=for-the-badge&logo=github&logoColor=white&labelColor=0550ae" alt="All Releases" height="36">
-        </a>
-      </p>
-      <br>
-      <sub>📦 <b>File:</b> <code>MR-Tracker-v1.0.1.apk</code> &bull; ⚖️ <b>Size:</b> <code>19.8 MB</code> &bull; 📱 <b>Min Android:</b> <code>7.0 (API 24+)</code></sub>
-    </td>
-    <td align="center" width="40%">
-      <h3>📱 Scan to Download</h3>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fgithub.com%2FRudraMangroliya%2FExpenseTracker%2Freleases%2Fdownload%2Fv1.0.1%2FMR-Tracker-v1.0.1.apk" alt="Download QR Code" width="140" height="140">
-      <br>
-      <sub>Point your phone camera here to download directly to your mobile device</sub>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+### 📥 Latest Production APK
+
+<p align="center">
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest">
+    <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20LATEST%20APK-v1.0.2%20STABLE-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK Button" height="48">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases">
+    <img src="https://img.shields.io/badge/🏷️%20View%20All%20Releases%20&%20Changelog-0969da?style=for-the-badge&logo=github&logoColor=white&labelColor=0550ae" alt="All Releases" height="36">
+  </a>
+</p>
+
+<p align="center">
+  <code>📦 Package: MR-Tracker.apk</code> &bull; 
+  <code>⚡ Latest Release: v1.0.2</code> &bull; 
+  <code>📱 Android: 7.0+ (API 24+)</code> &bull; 
+  <code>🔒 100% Offline & Private</code>
+</p>
+
+<br>
+
+<details align="center">
+  <summary>📱 <b>Visiting on Computer? Click to Scan QR Code with Phone Camera</b></summary>
+  <br>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fgithub.com%2FRudraMangroliya%2FExpenseTracker%2Freleases%2Flatest" alt="Scan to Download APK" width="150" height="150">
+  <p><sub>Scan with your phone camera or Google Lens to download directly to your mobile device</sub></p>
+</details>
+
+</div>
 
 ### 📋 Installation Guide (Step-by-Step):
-1. **Download**: Tap the [📥 **Download MR-Tracker-v1.0.1.apk**](https://github.com/RudraMangroliya/ExpenseTracker/releases/download/v1.0.1/MR-Tracker-v1.0.1.apk) button or scan the QR code above.
-2. **Open**: Tap the download completed notification, or open your phone's **Files / Downloads** app and tap `MR-Tracker-v1.0.1.apk`.
+1. **Download**: Tap the [📥 **Download Latest APK**](https://github.com/RudraMangroliya/ExpenseTracker/releases/latest) button above on your Android device (Chrome or any browser).
+2. **Open**: Tap the download completed notification, or open your phone's **Files / Downloads** app and tap the downloaded `.apk` file.
 3. **Allow Installation**:
    - If prompted: *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings**.
    - Turn ON **"Allow from this source"**.
