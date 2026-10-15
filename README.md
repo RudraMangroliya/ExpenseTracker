@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest">
-    <img src="https://img.shields.io/badge/⚡%20Download%20Latest%20APK-v1.0.2-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK" height="42">
+    <img src="https://img.shields.io/badge/⚡%20Download%20Latest%20APK-v1.0.3-00C853?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK" height="42">
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases">
@@ -37,7 +37,7 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
 
 <p align="center">
   <a href="https://github.com/RudraMangroliya/ExpenseTracker/releases/latest">
-    <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20LATEST%20APK-v1.0.2%20STABLE-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK Button" height="48">
+    <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20LATEST%20APK-v1.0.3%20STABLE-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=1b5e20" alt="Download Latest APK Button" height="48">
   </a>
 </p>
 
@@ -49,7 +49,7 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
 
 <p align="center">
   <code>📦 Package: MR-Tracker.apk</code> &bull; 
-  <code>⚡ Latest Release: v1.0.2</code> &bull; 
+  <code>⚡ Latest Release: v1.0.3</code> &bull; 
   <code>📱 Android: 7.0+ (API 24+)</code> &bull; 
   <code>🔒 100% Offline & Private</code>
 </p>
@@ -73,6 +73,9 @@ Anyone can install and run **MR Tracker** directly on their Android phone withou
    - Turn ON **"Allow from this source"**.
    - Go back and tap **Install**.
 4. **Done!** Launch **MR Tracker** and enjoy 100% offline, privacy-first expense and budget tracking!
+
+> 💡 **Fixing "Package Conflict" or "App Not Installed" Error**:
+> If you previously installed an older build directly from Android Studio or an earlier release with mismatched signatures, please **uninstall that existing app from your device first** before installing `v1.0.3`. All builds from `v1.0.3` onwards now use the identical shared signing certificate, so future GitHub APK downloads will update seamlessly without any package conflicts!
 
 ---
 

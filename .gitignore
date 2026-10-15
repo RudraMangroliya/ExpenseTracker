@@ -49,9 +49,10 @@ captures/
 ehthumbs.db
 Thumbs.db
 
-# Signing keys & secrets (never push private keystores or secrets to GitHub!)
+# Signing keys & secrets (never push private production keystores or secrets to GitHub!)
 *.jks
 *.keystore
+!app/debug.keystore
 secrets.properties
 google-services.json
 
