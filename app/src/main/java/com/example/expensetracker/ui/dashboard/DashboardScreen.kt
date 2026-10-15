@@ -154,12 +154,9 @@ fun DashboardScreen(
                     index = index + 3,
                     modifier = Modifier.animateItem(
                         fadeInSpec = null,
-                        placementSpec = androidx.compose.animation.core.spring(
-                            dampingRatio = androidx.compose.animation.core.Spring.DampingRatioLowBouncy,
-                            stiffness = androidx.compose.animation.core.Spring.StiffnessMediumLow
-                        ),
+                        placementSpec = null,
                         fadeOutSpec = androidx.compose.animation.core.tween(
-                            durationMillis = 280,
+                            durationMillis = 200,
                             easing = androidx.compose.animation.core.FastOutLinearInEasing
                         )
                     )
@@ -197,16 +194,10 @@ fun DashboardScreen(
                 AnimatedScrollEntry(
                     index = uiState.recentTransactions.size + 4 + index,
                     modifier = Modifier.animateItem(
-                        fadeInSpec = androidx.compose.animation.core.tween(
-                            durationMillis = 520,
-                            easing = androidx.compose.animation.core.CubicBezierEasing(0.14f, 0.94f, 0.22f, 1.0f)
-                        ),
-                        placementSpec = androidx.compose.animation.core.spring(
-                            dampingRatio = androidx.compose.animation.core.Spring.DampingRatioLowBouncy,
-                            stiffness = androidx.compose.animation.core.Spring.StiffnessMediumLow
-                        ),
+                        fadeInSpec = null,
+                        placementSpec = null,
                         fadeOutSpec = androidx.compose.animation.core.tween(
-                            durationMillis = 280,
+                            durationMillis = 200,
                             easing = androidx.compose.animation.core.FastOutLinearInEasing
                         )
                     )

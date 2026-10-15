@@ -113,6 +113,7 @@ fun TransactionsScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val listState = rememberLazyListState()
+    val chipsScrollState = rememberLazyListState()
     val snackbarHostState = remember { SnackbarHostState() }
     val haptic = rememberAppHapticFeedback()
     val coroutineScope = rememberCoroutineScope()
@@ -121,18 +122,18 @@ fun TransactionsScreen(
     var selectedTxForDetail by remember { mutableStateOf<TransactionWithCategory?>(null) }
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
 
-    // Auto-scroll to top whenever transactions list or filter criteria changes
+    // Auto-scroll to top instantly whenever transactions list or filter criteria changes
     val latestTxId = uiState.transactions.firstOrNull()?.transaction?.id
     val txCount = uiState.transactions.size
 
     var isFirstComposition by remember { mutableStateOf(true) }
-    LaunchedEffect(latestTxId, txCount) {
+    LaunchedEffect(latestTxId, txCount, uiState.filterCriteria) {
         if (isFirstComposition) {
             isFirstComposition = false
             return@LaunchedEffect
         }
         if (uiState.transactions.isNotEmpty() && (listState.firstVisibleItemIndex > 0 || listState.firstVisibleItemScrollOffset > 0)) {
-            listState.animateScrollToItem(0)
+            listState.scrollToItem(0)
         }
     }
 
@@ -185,6 +186,9 @@ fun TransactionsScreen(
                         if (uiState.filterCriteria.searchQuery.isNotEmpty()) {
                             IconButton(onClick = {
                                 haptic.perform(AppHapticFeedbackType.Light)
+                                coroutineScope.launch {
+                                    listState.scrollToItem(0)
+                                }
                                 viewModel.onSearchQueryChanged("")
                             }) {
                                 Icon(Icons.Default.Clear, contentDescription = "Clear search", modifier = Modifier.size(18.dp))
@@ -238,12 +242,13 @@ fun TransactionsScreen(
             }
 
             // Horizontally Scrollable Filter Chips Row with Sticky Clear All Button on the Right
-            val chipsScrollState = rememberLazyListState()
 
-            // Auto-scroll towards active filter tags when filters are applied
+            // Auto-scroll towards active filter tags when filters are applied, or instant reset when cleared
             LaunchedEffect(uiState.filterCriteria.activeFilterCount) {
                 if (uiState.filterCriteria.activeFilterCount > 0) {
                     chipsScrollState.animateScrollToItem(3.coerceAtMost(chipsScrollState.layoutInfo.totalItemsCount - 1).coerceAtLeast(0))
+                } else {
+                    chipsScrollState.scrollToItem(0)
                 }
             }
 
@@ -416,6 +421,10 @@ fun TransactionsScreen(
                         Surface(
                             onClick = {
                                 haptic.perform(AppHapticFeedbackType.Medium)
+                                coroutineScope.launch {
+                                    listState.scrollToItem(0)
+                                    chipsScrollState.scrollToItem(0)
+                                }
                                 viewModel.clearAllFiltersAndSearch()
                             },
                             shape = RoundedCornerShape(12.dp),
@@ -580,6 +589,10 @@ fun TransactionsScreen(
                             onButtonClick = {
                                 haptic.perform(AppHapticFeedbackType.Light)
                                 if (uiState.filterCriteria.isFiltered) {
+                                    coroutineScope.launch {
+                                        listState.scrollToItem(0)
+                                        chipsScrollState.scrollToItem(0)
+                                    }
                                     viewModel.clearAllFiltersAndSearch()
                                 } else {
                                     onNavigateToAddTransaction()
@@ -602,12 +615,9 @@ fun TransactionsScreen(
                             index = index,
                             modifier = Modifier.animateItem(
                                 fadeInSpec = null,
-                                placementSpec = androidx.compose.animation.core.spring(
-                                    dampingRatio = androidx.compose.animation.core.Spring.DampingRatioLowBouncy,
-                                    stiffness = androidx.compose.animation.core.Spring.StiffnessMediumLow
-                                ),
+                                placementSpec = null,
                                 fadeOutSpec = androidx.compose.animation.core.tween(
-                                    durationMillis = 280,
+                                    durationMillis = 200,
                                     easing = androidx.compose.animation.core.FastOutLinearInEasing
                                 )
                             )
@@ -660,6 +670,10 @@ fun TransactionsScreen(
                     }
                 },
                 onReset = {
+                    coroutineScope.launch {
+                        listState.scrollToItem(0)
+                        chipsScrollState.scrollToItem(0)
+                    }
                     viewModel.resetAllFilters()
                 }
             )

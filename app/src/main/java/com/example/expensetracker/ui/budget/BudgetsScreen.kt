@@ -213,12 +213,9 @@ fun BudgetsScreen(
                         index = index,
                         modifier = Modifier.animateItem(
                             fadeInSpec = null,
-                            placementSpec = androidx.compose.animation.core.spring(
-                                dampingRatio = androidx.compose.animation.core.Spring.DampingRatioLowBouncy,
-                                stiffness = androidx.compose.animation.core.Spring.StiffnessMediumLow
-                            ),
+                            placementSpec = null,
                             fadeOutSpec = androidx.compose.animation.core.tween(
-                                durationMillis = 280,
+                                durationMillis = 200,
                                 easing = androidx.compose.animation.core.FastOutLinearInEasing
                             )
                         )

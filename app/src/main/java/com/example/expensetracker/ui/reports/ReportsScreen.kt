@@ -267,12 +267,9 @@ fun ReportsScreen(
                         index = index + 2,
                         modifier = Modifier.animateItem(
                             fadeInSpec = null,
-                            placementSpec = androidx.compose.animation.core.spring(
-                                dampingRatio = androidx.compose.animation.core.Spring.DampingRatioLowBouncy,
-                                stiffness = androidx.compose.animation.core.Spring.StiffnessMediumLow
-                            ),
+                            placementSpec = null,
                             fadeOutSpec = androidx.compose.animation.core.tween(
-                                durationMillis = 280,
+                                durationMillis = 200,
                                 easing = androidx.compose.animation.core.FastOutLinearInEasing
                             )
                         )
@@ -298,12 +295,9 @@ fun ReportsScreen(
                         index = index + 2 + uiState.topCategories.size,
                         modifier = Modifier.animateItem(
                             fadeInSpec = null,
-                            placementSpec = androidx.compose.animation.core.spring(
-                                dampingRatio = androidx.compose.animation.core.Spring.DampingRatioLowBouncy,
-                                stiffness = androidx.compose.animation.core.Spring.StiffnessMediumLow
-                            ),
+                            placementSpec = null,
                             fadeOutSpec = androidx.compose.animation.core.tween(
-                                durationMillis = 280,
+                                durationMillis = 200,
                                 easing = androidx.compose.animation.core.FastOutLinearInEasing
                             )
                         )

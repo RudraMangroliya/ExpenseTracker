@@ -141,9 +141,9 @@ fun MorphingFabSheet(
     val primaryColor = MaterialTheme.colorScheme.primary
     val maxShadowElevationPx = remember(density) { with(density) { 6.dp.toPx() } }
 
-    // 2. Silky-Smooth & Relaxed Animation Timing ("smoother and duration not make faster, if need slow then make slow speed")
-    val openDuration = if (isLowRamDevice) 520 else 580
-    val closeDuration = if (isLowRamDevice) 400 else 460
+    // 2. Silky-Smooth & Responsive Animation Timing
+    val openDuration = if (isLowRamDevice) 280 else 320
+    val closeDuration = if (isLowRamDevice) 220 else 250
 
     val sheetProgressState = animateFloatAsState(
         targetValue = if (isOpen) 1f else 0f,
@@ -158,7 +158,7 @@ fun MorphingFabSheet(
     val fabVisibilityProgress by animateFloatAsState(
         targetValue = if (showFab && !isOpen) 1f else 0f,
         animationSpec = tween(
-            durationMillis = if (isOpen) 240 else 300,
+            durationMillis = if (isOpen) 180 else 220,
             easing = if (isOpen) FastOutLinearInEasing else FastOutSlowInEasing
         ),
         label = "fabVisibilityProgress"

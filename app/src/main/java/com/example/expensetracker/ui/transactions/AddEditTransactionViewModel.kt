@@ -18,8 +18,10 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import com.example.expensetracker.data.repository.SplitParticipantData
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 enum class SplitMode {
     EQUAL,
@@ -408,11 +410,11 @@ class AddEditTransactionViewModel(
         // 1. Trigger the close animation of the sheet / + button first
         onCloseStarted?.invoke()
 
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             try {
-                // 2. Allow the sheet to finish closing into the + FAB (240ms duration) before DB commit
+                // 2. Allow the sheet to finish closing into the + FAB (250ms duration) before DB commit
                 if (onCloseStarted != null) {
-                    delay(280)
+                    delay(260)
                 }
 
                 if (currentState.transactionId == null) {
@@ -461,12 +463,16 @@ class AddEditTransactionViewModel(
                     }
                 }
 
-                _formState.value = _formState.value.copy(isSaving = false, saveSuccess = true)
+                withContext(Dispatchers.Main) {
+                    _formState.value = _formState.value.copy(isSaving = false, saveSuccess = true)
+                }
             } catch (e: Exception) {
-                _formState.value = _formState.value.copy(
-                    isSaving = false,
-                    amountError = "Failed to save transaction: ${e.localizedMessage}"
-                )
+                withContext(Dispatchers.Main) {
+                    _formState.value = _formState.value.copy(
+                        isSaving = false,
+                        amountError = "Failed to save transaction: ${e.localizedMessage}"
+                    )
+                }
             }
         }
     }
@@ -479,19 +485,23 @@ class AddEditTransactionViewModel(
         // 1. Trigger close animation of sheet first
         onCloseStarted?.invoke()
 
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             try {
                 // 2. Allow close animation to complete before committing deletion
                 if (onCloseStarted != null) {
-                    delay(280)
+                    delay(260)
                 }
                 transactionRepository.deleteTransactionById(txId)
-                _formState.value = _formState.value.copy(isDeleting = false, deleteSuccess = true)
+                withContext(Dispatchers.Main) {
+                    _formState.value = _formState.value.copy(isDeleting = false, deleteSuccess = true)
+                }
             } catch (e: Exception) {
-                _formState.value = _formState.value.copy(
-                    isDeleting = false,
-                    amountError = "Failed to delete transaction: ${e.localizedMessage}"
-                )
+                withContext(Dispatchers.Main) {
+                    _formState.value = _formState.value.copy(
+                        isDeleting = false,
+                        amountError = "Failed to delete transaction: ${e.localizedMessage}"
+                    )
+                }
             }
         }
     }
